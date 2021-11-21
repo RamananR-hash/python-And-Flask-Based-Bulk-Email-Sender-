@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Wee-Direct Email Service</title>
+    <link rel = "icon" href ="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type = "image/x-icon">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+
+body{
+		background-color: #25274d;
+	}
+	.contact{
+		padding: 4%;
+		height: 400px;
+	}
+	.col-md-3{
+		background: #ff9b00;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	.contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+	    margin: 0;
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		font-size: 20px;
+		width: 55%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+	}
+  </style>
+</head>
+<body>
+  <div class="container contact">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="contact-info">
+          <center>
+          <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+          <h2>Wee - Direct </h2>
+          <h5>Wee Email Service</h5>
+          <br>
+          <h6>Welecome,</h6>
+          <h6>Thanks for choosing WEE-DIRECT</h6>
+          </center>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="contact-form">
+          <div class="form-group">
+            <form action="/confirm" method="post"enctype = "multipart/form-data">
+            <label class="control-label col-sm-2" for="fname">User Email :</label>
+            <div class="col-sm-10">
+            <input  type="email" name ='Username'placeholder="Sender Email" class="form-control" id="fname" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="lname">Password:</label>
+            <div class="col-sm-10">
+            <input  type="password" name ='Password'placeholder="Password"  class="form-control" id="lname" required >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Subject:</label>
+            <div class="col-sm-10">
+            <input type="text"  class="form-control" name ='subject' id="email" placeholder="Enter Subject" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="comment">Body:</label>
+            <div class="col-sm-10">
+            <textarea class="form-control" rows="5" type="text" name ='body'placeholder="Body"></textarea>
+            <br>
+
+            <h3>Email To Send</h3>
+            <br>
+            <input type="file" name ='file'required><br><br>
+            <h6>Attachments(Images/Documents)</h6>
+            <h3>Note : if your attaching only one document select same as second</h3><br>
+            <input type="file" name ='attach1'><br><br>
+            <input type="file" name ='attach2'><br><br>
+            <input class="w3-radio"  type="checkbox" name =''required><label>Disabled Two Factor Autentication</label><br><br>
+            <input class="w3-radio"  type="checkbox" name =''required><label>Allow Less Protected App</label><br><br><br>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+            <center>
+            <button type="submit" class="btn btn-default">Submit Email</button>
+            </center>
+          </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
